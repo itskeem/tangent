@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tangent. Good Drinks. Great Moments.</title>
+  <meta name="description"
+    content="Tangent is a destination for quality drinks, good taste and great moments. A curated range of wines, spirits, beers and beverages for celebrations, gatherings and everyday enjoyment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+  <!-- ============ AGE GATE ============ -->
+  <div class="age-gate" id="ageGate" aria-hidden="false" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+    <div class="age-gate__panel">
+      <p class="age-gate__mark">
+        <img src="assets/images/logo.png" alt="Tangent Wines &amp; Spirits" class="age-gate__logo">
+      </p>
+      <h2 id="ageGateTitle" class="age-gate__title">Are you of legal drinking age?</h2>
+      <p class="age-gate__copy">You must be 18 or older to enter this site.</p>
+      <div class="age-gate__actions">
+        <button class="btn btn--gold" id="ageYes">Yes, I'm 18+</button>
+        <button class="btn btn--ghost" id="ageNo">No, take me back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__mark" aria-current="page">
+        <img src="assets/images/logo.png" alt="Tangent Wines &amp; Spirits" class="nav__logo">
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="https://wa.me/254729372811" class="btn btn--line btn--sm" target="_blank" rel="noopener">WhatsApp
+          Us</a>
+      </div>
+
+      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="navMobile" aria-label="Mobile menu">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="drinks.html">Drinks</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://wa.me/254729372811" class="btn btn--gold" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg"
+        style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1600&q=80')"
+        role="img" aria-label="Dark atmospheric bar interior"></div>
+
+      <div class="hero__art" aria-hidden="true">
+        <svg viewBox="0 0 600 900" class="hero__bottle" preserveAspectRatio="xMidYMax meet"
+          xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="liquidGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e4c98a" />
+              <stop offset="60%" stop-color="#c8a15b" />
+              <stop offset="100%" stop-color="#7a5a28" />
+            </linearGradient>
+            <linearGradient id="highlightGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.0)" />
+              <stop offset="40%" stop-color="rgba(255,255,255,0.07)" />
+              <stop offset="100%" stop-color="rgba(255,255,255,0.0)" />
+            </linearGradient>
+            <clipPath id="bottleClip">
+              <path
+                d="M255 40 L255 130 Q255 150 240 165 L215 195 Q195 220 195 260 L195 800 Q195 860 260 860 L340 860 Q405 860 405 800 L405 260 Q405 220 385 195 L360 165 Q345 150 345 130 L345 40 Z" />
+            </clipPath>
+          </defs>
+
+          <!-- Bottle outline -->
+          <path
+            d="M255 40 L255 130 Q255 150 240 165 L215 195 Q195 220 195 260 L195 800 Q195 860 260 860 L340 860 Q405 860 405 800 L405 260 Q405 220 385 195 L360 165 Q345 150 345 130 L345 40 Z"
+            fill="none" stroke="url(#liquidGrad)" stroke-width="1.5" opacity="0.55" />
+
+          <!-- Liquid fill -->
+          <path d="M200 420 L400 420 L405 800 Q405 860 340 860 L260 860 Q195 860 195 800 Z" fill="url(#liquidGrad)"
+            opacity="0.1" clip-path="url(#bottleClip)" />
+
+          <!-- Liquid surface line -->
+          <line x1="197" y1="420" x2="403" y2="420" stroke="#c8a15b" stroke-width="1" opacity="0.4" />
+
+          <!-- Highlight streak -->
+          <rect x="220" y="200" width="40" height="580" fill="url(#highlightGrad)" clip-path="url(#bottleClip)"
+            rx="20" />
+
+          <!-- Neck label area -->
+          <rect x="255" y="10" width="90" height="32" rx="2" fill="none" stroke="#c8a15b" stroke-width="1.5"
+            opacity="0.5" />
+
+          <!-- Capsule/cap detail -->
+          <rect x="265" y="5" width="70" height="8" rx="1" fill="#c8a15b" opacity="0.15" />
+
+          <!-- Body label rectangle -->
+          <rect x="210" y="520" width="180" height="160" rx="2" fill="none" stroke="#c8a15b" stroke-width="1"
+            opacity="0.2" />
+          <!-- Label inner lines (simulating text) -->
+          <line x1="230" y1="560" x2="370" y2="560" stroke="#c8a15b" stroke-width="0.8" opacity="0.2" />
+          <line x1="240" y1="575" x2="360" y2="575" stroke="#c8a15b" stroke-width="0.5" opacity="0.15" />
+          <line x1="245" y1="590" x2="355" y2="590" stroke="#c8a15b" stroke-width="0.5" opacity="0.15" />
+
+          <!-- Base rim -->
+          <ellipse cx="300" cy="855" rx="70" ry="8" fill="none" stroke="#c8a15b" stroke-width="1" opacity="0.25" />
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Est. Kapsabet</p>
+        <h1 class="hero__title">TANGENT</h1>
+        <p class="hero__headline">Good Drinks. Great Moments.</p>
+        <p class="hero__copy">Discover a carefully selected range of wines, spirits, beers and beverages — curated for
+          every occasion.</p>
+        <div class="hero__actions">
+          <a href="drinks.html" class="btn btn--gold" id="heroCta">Explore the Range</a>
+          <a href="contact.html" class="btn btn--line">Visit Us</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="hero__scroll" aria-label="Scroll to learn more">
+        <span class="hero__scroll-line"></span>
+        Scroll
+      </a>
+    </section>
+
+    <!-- ============ ABOUT TEASER ============ -->
+    <section class="about" id="about">
+      <div class="about__media reveal" data-delay="1">
+        <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=800&q=80"
+          alt="Premium spirits bottles on shelf" class="about__img" loading="lazy">
+      </div>
+
+      <div class="about__content reveal" data-delay="2">
+        <p class="eyebrow">About Tangent</p>
+        <h2 class="section-title">More Than Just a Bottle.</h2>
+        <p class="about__copy">Tangent is a destination for quality drinks, good taste and great moments. We bring
+          together a carefully selected range of wines, spirits, beers and beverages for celebrations, gatherings and
+          everyday enjoyment.</p>
+        <a href="about.html" class="link-arrow">Discover Tangent</a>
+      </div>
+    </section>
+
+    <!-- ============ DRINKS TEASER ============ -->
+    <section class="drinks" id="drinks">
+      <div class="teaser-head">
+        <div>
+          <p class="eyebrow">The Range</p>
+          <h2 class="section-title">What We Offer</h2>
+        </div>
+        <a href="drinks.html" class="link-arrow">See the full range</a>
+      </div>
+
+      <div class="drinks__grid">
+        <article class="drink-card reveal" data-delay="1">
+          <div class="drink-card__media">
+            <img src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=600&q=80"
+              alt="Premium spirits and whisky" loading="lazy">
+          </div>
+          <div class="drink-card__body">
+            <h3>Spirits</h3>
+            <p>Whisky, vodka, gin, rum and other premium spirits.</p>
+          </div>
+        </article>
+
+        <article class="drink-card reveal" data-delay="2">
+          <div class="drink-card__media">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80"
+              alt="Fine wines selection" loading="lazy">
+          </div>
+          <div class="drink-card__body">
+            <h3>Wines</h3>
+            <p>Red, white, ros&eacute; and sparkling wines.</p>
+          </div>
+        </article>
+
+        <article class="drink-card reveal" data-delay="3">
+          <div class="drink-card__media">
+            <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80"
+              alt="Beers and ciders" loading="lazy">
+          </div>
+          <div class="drink-card__body">
+            <h3>Beers &amp; Ciders</h3>
+            <p>A selection of popular beers and ciders.</p>
+          </div>
+        </article>
+
+        <article class="drink-card reveal" data-delay="4">
+          <div class="drink-card__media">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
+              alt="Celebration drinks and champagne" loading="lazy">
+          </div>
+          <div class="drink-card__body">
+            <h3>Celebrations</h3>
+            <p>Drinks for parties, events, gatherings and special occasions.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ BRANDS ============ -->
+    <section class="brands">
+      <div class="section-head">
+        <p class="eyebrow">Featured Brands</p>
+        <h2 class="section-title">Brands You Know.<br>Quality You Trust.</h2>
+      </div>
+
+      <div class="brands__track-wrap">
+        <div class="brands__track" id="brandsTrack">
+          <span class="brands__item">Johnnie Walker</span>
+          <span class="brands__item">Hennessy</span>
+          <span class="brands__item">Mo&euml;t &amp; Chandon</span>
+          <span class="brands__item">Absolut</span>
+          <span class="brands__item">Smirnoff</span>
+          <span class="brands__item">Heineken</span>
+          <span class="brands__item">Glenfiddich</span>
+          <span class="brands__item" aria-hidden="true">Johnnie Walker</span>
+          <span class="brands__item" aria-hidden="true">Hennessy</span>
+          <span class="brands__item" aria-hidden="true">Mo&euml;t &amp; Chandon</span>
+          <span class="brands__item" aria-hidden="true">Absolut</span>
+          <span class="brands__item" aria-hidden="true">Smirnoff</span>
+          <span class="brands__item" aria-hidden="true">Heineken</span>
+          <span class="brands__item" aria-hidden="true">Glenfiddich</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY TANGENT ============ -->
+    <section class="why">
+      <div class="section-head">
+        <p class="eyebrow">Why Tangent</p>
+        <h2 class="section-title">The Tangent Standard</h2>
+      </div>
+
+      <div class="why__grid">
+        <div class="why-card reveal" data-delay="1">
+          <svg viewBox="0 0 48 48" class="why-card__icon" aria-hidden="true">
+            <circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M17 24l5 5 10-11" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+          <h3>Quality Selection</h3>
+          <p>Carefully selected drinks from trusted, recognised brands.</p>
+        </div>
+        <div class="why-card reveal" data-delay="2">
+          <svg viewBox="0 0 48 48" class="why-card__icon" aria-hidden="true">
+            <path d="M24 8c-8 0-14 6-14 13 0 9 14 19 14 19s14-10 14-19c0-7-6-13-14-13z" fill="none"
+              stroke="currentColor" stroke-width="1.4" />
+          </svg>
+          <h3>Great Service</h3>
+          <p>Friendly and professional customer service every time.</p>
+        </div>
+        <div class="why-card reveal" data-delay="3">
+          <svg viewBox="0 0 48 48" class="why-card__icon" aria-hidden="true">
+            <path d="M24 6l5 11 12 1.5-9 8 2.7 12L24 32l-10.7 6.5L16 26.5l-9-8L19 17z" fill="none" stroke="currentColor"
+              stroke-width="1.4" />
+          </svg>
+          <h3>Trusted Choice</h3>
+          <p>A reliable destination for drinks, events and celebrations.</p>
+        </div>
+        <div class="why-card reveal" data-delay="4">
+          <svg viewBox="0 0 48 48" class="why-card__icon" aria-hidden="true">
+            <path d="M24 6c-7 0-13 5.5-13 13 0 10 13 23 13 23s13-13 13-23c0-7.5-6-13-13-13z" fill="none"
+              stroke="currentColor" stroke-width="1.4" />
+            <circle cx="24" cy="19" r="4" fill="none" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+          <h3>Convenient Location</h3>
+          <p>Easy to find and always accessible to our customers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <h2 class="cta-band__title">Come Visit Tangent</h2>
+      <p class="cta-band__copy">Stop by, say hello, and find the right bottle for your next occasion.</p>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--gold">Visit Tangent</a>
+        <a href="https://wa.me/254729372811" class="btn btn--line" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+  <!-- Giant Watermark & Orb (if user wants them, but let's just stick to the clean 3-row layout per reference) -->
+  
+  <div class="footer__inner">
+    <!-- Row 1: Brand & Links -->
+    <div class="footer__row footer__row--top">
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="Tangent Wines &amp; Spirits" class="footer__logo">
+      </div>
+      <nav class="footer__links-hz" aria-label="Footer navigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="drinks.html">DRINKS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Row 2: Socials -->
+    <div class="footer__row footer__row--middle">
+      <div class="footer__social-hz">
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>INSTAGRAM</span>
+        </a>
+        <a href="#" aria-label="X" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="20"></line><line x1="20" y1="4" x2="4" y2="20"></line></svg>
+          <span>X</span>
+        </a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          <span>FACEBOOK</span>
+        </a>
+        <a href="https://wa.me/254729372811" aria-label="WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          <span>WHATSAPP</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Row 3: Bottom -->
+    <div class="footer__row footer__row--bottom">
+      <p>&copy; 2026 Tangent. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <span class="sep">|</span>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+      <p>A craft of <span style="color: var(--gold-soft);">neo.keem</span></p>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

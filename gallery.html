@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery â€” Tangent</title>
+<meta name="description" content="A look inside Tangent â€” store, shelves, bottles and events.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+<!-- ============ AGE GATE ============ -->
+<div class="age-gate" id="ageGate" aria-hidden="false" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+  <div class="age-gate__panel">
+    <p class="age-gate__mark">
+      <img src="assets/images/logo.png" alt="Tangent Wines &amp; Spirits" class="age-gate__logo">
+    </p>
+    <h2 id="ageGateTitle" class="age-gate__title">Are you of legal drinking age?</h2>
+    <p class="age-gate__copy">You must be 18 or older to enter this site.</p>
+    <div class="age-gate__actions">
+      <button class="btn btn--gold" id="ageYes">Yes, I'm 18+</button>
+      <button class="btn btn--ghost" id="ageNo">No, take me back</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__mark">
+      <img src="assets/images/logo.png" alt="Tangent Wines &amp; Spirits" class="nav__logo">
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="drinks.html">Drinks</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a href="https://wa.me/254729372811" class="btn btn--line btn--sm" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav__mobile" id="navMobile" aria-label="Mobile menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://wa.me/254729372811" class="btn btn--gold" target="_blank" rel="noopener">WhatsApp Us</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=1600&q=80')" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <p class="page-hero__crumb"><a href="index.html">Home</a> / Gallery</p>
+      <h1 class="page-hero__title">Inside Tangent</h1>
+      <p class="page-hero__copy">A look at the store, the shelves, and the moments we help create. Click any photo to view it larger.</p>
+    </div>
+  </div>
+
+  <section class="gallery" id="gallery" style="padding-top:3rem;">
+    <div class="gallery__grid" id="galleryGrid">
+      <button class="gallery__item g-tall reveal" data-caption="Bar atmosphere" data-delay="1">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=700&q=80" alt="Dark atmospheric bar interior" loading="lazy">
+      </button>
+      <button class="gallery__item reveal" data-caption="Premium spirits" data-delay="2">
+        <img src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=600&q=80" alt="Premium spirits bottles" loading="lazy">
+      </button>
+      <button class="gallery__item reveal" data-caption="Fine wines" data-delay="3">
+        <img src="https://images.unsplash.com/photo-1474722883778-792e7764ab39?auto=format&fit=crop&w=600&q=80" alt="Wine bottle and glass" loading="lazy">
+      </button>
+      <button class="gallery__item g-tall reveal" data-caption="Whisky selection" data-delay="1">
+        <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=700&q=80" alt="Whisky bottles collection" loading="lazy">
+      </button>
+      <button class="gallery__item reveal" data-caption="Craft beers" data-delay="2">
+        <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80" alt="Craft beer selection" loading="lazy">
+      </button>
+      <button class="gallery__item reveal" data-caption="Celebrations" data-delay="3">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Champagne celebration" loading="lazy">
+      </button>
+      <button class="gallery__item reveal" data-caption="Cocktail moments" data-delay="4">
+        <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=600&q=80" alt="Cocktail glass" loading="lazy">
+      </button>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2 class="cta-band__title">Come Visit Tangent</h2>
+    <p class="cta-band__copy">Stop by, say hello, and find the right bottle for your next occasion.</p>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--gold">Visit Tangent</a>
+      <a href="https://wa.me/254729372811" class="btn btn--line" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </section>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox__frame img-slot" id="lightboxFrame"></div>
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <!-- Giant Watermark & Orb (if user wants them, but let's just stick to the clean 3-row layout per reference) -->
+  
+  <div class="footer__inner">
+    <!-- Row 1: Brand & Links -->
+    <div class="footer__row footer__row--top">
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="Tangent Wines &amp; Spirits" class="footer__logo">
+      </div>
+      <nav class="footer__links-hz" aria-label="Footer navigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="drinks.html">DRINKS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Row 2: Socials -->
+    <div class="footer__row footer__row--middle">
+      <div class="footer__social-hz">
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>INSTAGRAM</span>
+        </a>
+        <a href="#" aria-label="X" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="20"></line><line x1="20" y1="4" x2="4" y2="20"></line></svg>
+          <span>X</span>
+        </a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          <span>FACEBOOK</span>
+        </a>
+        <a href="https://wa.me/254729372811" aria-label="WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          <span>WHATSAPP</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Row 3: Bottom -->
+    <div class="footer__row footer__row--bottom">
+      <p>&copy; 2026 Tangent. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <span class="sep">|</span>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+      <p>A craft of <span style="color: var(--gold-soft);">neo.keem</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
