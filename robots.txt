@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tangent.co.ke/sitemap.xml
